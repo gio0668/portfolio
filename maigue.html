@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gio Maigue's Awesome Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for smooth scrolling and font */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Dark slate gray text */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        /* Custom background image for Hero Section */
+        .hero-background {
+            background-image: url('https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/434749368_122099411414261601_736328921956085836_n.png?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEErW3uz0CEhK6NNWfSrDR6-pR2ZAi61-H6lHZkCLrX4VznIoEXfmpMK5OCq6cG1C8ZYmo2OQGg01E0DNwJvzYf&_nc_ohc=-kCRzZwYptcQ7kNvwEqXZNJ&_nc_oc=AdnLKz8n1CrZqZScxETCVzSpd4cJOh4knobWGGvdwdtFJQDN0GaUj3M8Vy56O3RwFy8&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=i-nCG5pJ8ZR1ESuKqXWUQw&oh=00_AfLQU8lRw8UbnhBN8lBPalpGbTUauJHu7NU3xGi8v-KSsg&oe=683E302F'); /* Replace with your desired background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition duration-300">Gio Maigue</a>
+            <ul class="flex space-x-6">
+                <li><a href="#hero" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Home</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Projects</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">About</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="relative bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 md:py-32 flex items-center justify-center min-h-screen">
+        <div class="absolute inset-0 hero-background opacity-30 z-0"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="relative w-40 h-40 mx-auto mb-8 rounded-full overflow-hidden shadow-xl ring-4 ring-white ring-opacity-50">
+                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-1/499536025_2578159629021312_1425519218478754264_n.jpg?stp=cp6_dst-jpg_s160x160_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGf0kGHkxHePbVtlmqTp6UofMhfYLtfw3t8yF9gu1_DewwwW9Mfmq1vkbDSdf9UspQ-yusOeS423YqmKx2EhDEb&_nc_ohc=ZriuDRG3RdEQ7kNvwGEtqVn&_nc_oc=AdneuEWEaTWOLKmza03rPcrBUIvR_9-YthGl8BPejnIh3Cf5sbiqltrZER6rj1V_-S4&_nc_zt=24&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=l55n0vW1JMY05sVjg89yzg&oh=00_AfLb2KzLKZMMewo01GQ8CWAa22I3tNpwWmtnEhOOGk72SQ&oe=683E2BE2" alt="Your Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Hi, I'm <span class="text-yellow-300">Gio Maigue</span></h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">A passionate full-time developer creating awesome things.</p>
+            <a href="#projects" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-3 rounded-full shadow-lg font-semibold text-lg transition duration-300 transform hover:scale-105">View My Work</a>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 overflow-hidden">
+                    <img src="binhero.jpg" alt="Waste Sorting Game" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Waste Sorting Game for Kids</h3>
+                        <p class="text-gray-600 mb-4">I developed an interactive waste sorting game designed specifically for kids, aiming to educate them on environmental responsibility through engaging gameplay.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Game Development</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Education</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center group">
+                            View Project
+                            <svg class="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 overflow-hidden">
+                    <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/434749368_122099411414261601_736328921956085836_n.png?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEErW3uz0CEhK6NNWfSrDR6-pR2ZAi61-H6lHZkCLrX4VznIoEXfmpMK5OCq6cG1C8ZYmo2OQGg01E0DNwJvzYf&_nc_ohc=-kCRzZwYptcQ7kNvwEqXZNJ&_nc_oc=AdnLKz8n1CrZqZScxETCVzSpd4cJOh4knobWGGvdwdtFJQDN0GaUj3M8Vy56O3RwFy8&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=i-nCG5pJ8ZR1ESuKqXWUQw&oh=00_AfLQU8lRw8UbnhBN8lBPalpGbTUauJHu7NU3xGi8v-KSsg&oe=683E302F" alt="Business Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Gsole Batangas City Business Website</h3>
+                        <p class="text-gray-600 mb-4">I created a professional website for my sneaker business, Gsole Batangas City, to showcase products, engage customers, and facilitate online presence.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">E-commerce</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Web Design</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Marketing</span>
+                        </div>
+                        <a href="https://www.facebook.com/people/Gsole-Batangas-city/61557848039169/" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium inline-flex items-center group">
+                            View Business Page
+                            <svg class="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-6">Personal Information</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Hello! I'm Gio Maigue, a full-time developer. I love playing games, watching movies, and more. I thrive on solving complex problems and creating intuitive, impactful solutions. I'm always eager to learn new technologies and improve my craft.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li><strong>Location:</strong> [Mapulo, Taysan, Batangas]</li>
+                        <li><strong>Email:</strong> Giomaigue87@gmail.com</li>
+                        <li><strong>Phone:</strong> 09156055942</li>
+                        <li><strong>Availability:</strong> Open to new opportunities</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-6">Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-blue-200 text-blue-900 px-4 py-2 rounded-full font-medium shadow-sm">HTML5</span>
+                        <span class="bg-blue-200 text-blue-900 px-4 py-2 rounded-full font-medium shadow-sm">CSS3</span>
+                        <span class="bg-blue-200 text-blue-900 px-4 py-2 rounded-full font-medium shadow-sm">JavaScript</span>
+                        <span class="bg-green-200 text-green-900 px-4 py-2 rounded-full font-medium shadow-sm">React.js</span>
+                        <span class="bg-purple-200 text-purple-900 px-4 py-2 rounded-full font-medium shadow-sm">Node.js</span>
+                        <span class="bg-yellow-200 text-yellow-900 px-4 py-2 rounded-full font-medium shadow-sm">Python</span>
+                        <span class="bg-red-200 text-red-900 px-4 py-2 rounded-full font-medium shadow-sm">SQL</span>
+                        <span class="bg-indigo-200 text-indigo-900 px-4 py-2 rounded-full font-medium shadow-sm">Git</span>
+                        <span class="bg-gray-200 text-gray-900 px-4 py-2 rounded-full font-medium shadow-sm">UI/UX Design</span>
+                        <span class="bg-teal-200 text-teal-900 px-4 py-2 rounded-full font-medium shadow-sm">Figma</span>
+                        <span class="bg-orange-200 text-orange-900 px-4 py-2 rounded-full font-medium shadow-sm">Business Management</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-6">Experience</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700">Web Developer</h4>
+                            <p class="text-gray-600 text-sm mb-2">Full-time role</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Developed and maintained web applications.</li>
+                                <li>Contributed to various software projects.</li>
+                                <li>Implemented new features and optimized existing code.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-700">Businessman</h4>
+                            <p class="text-gray-600 text-sm mb-2">Entrepreneur in the sneaker world</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Managed and operated a business in the sneaker industry.</li>
+                                <li>Handled various aspects of business operations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-6">Achievements</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3">
+                        <li>Graduated from STI College Batangas Cum Laude.</li>
+                        <li>Successfully became a web developer.</li>
+                        <li>Established and managed a successful shoes business.</li>
+                        <li>Awarded "Developer of the Year" at Tech Solutions Inc. (2023).</li>
+                        <li>Successfully launched Project X, resulting in a 20% increase in user engagement.</li>
+                        <li>Completed advanced certification in [e.g., Cloud Computing, Data Science].</li>
+                        <li>Mentored junior developers, fostering a collaborative team environment.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <h3 class="text-3xl font-semibold text-gray-800 mb-6">Connect With Me</h3>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.facebook.com/gio.maigue.2024" target="_blank" class="text-gray-600 hover:text-blue-700 transition duration-300 transform hover:scale-110" aria-label="Facebook (Personal)">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.262c-1.247 0-1.64.773-1.64 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z"></path></svg>
+                    </a>
+                    <a href="https://www.facebook.com/people/Gsole-Batangas-city/61557848039169/" target="_blank" class="text-gray-600 hover:text-blue-700 transition duration-300 transform hover:scale-110" aria-label="Facebook (Business)">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.262c-1.247 0-1.64.773-1.64 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">Get In Touch</h2>
+            <p class="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
+                Have a project in mind or just want to say hello? Feel free to reach out! I'm always open to new collaborations and interesting opportunities.
+            </p>
+            <a href="mailto:your.email@example.com" class="inline-block bg-indigo-600 text-white hover:bg-indigo-700 px-8 py-3 rounded-full shadow-lg font-semibold text-lg transition duration-300 transform hover:scale-105">Send Me an Email</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Gio Maigue. All rights reserved.</p>
+            <p class="text-sm mt-2">Designed by Gio Maigue Trust ME</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
